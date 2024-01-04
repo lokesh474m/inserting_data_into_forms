@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School list</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: red;">SCHOOLS LIST</h1>
+        <table border="2px" cellpadding="13px" cellspacing="0px">
+            <tr>
+                <th>SNAME</th>
+                <th>SPRINCIPAL</th>
+                <th>SLOC</th>
+            </tr>
+        {% for do in formobjects %}
+            <tr>
+                <td>{{do.Sname}}</td>
+                <td>{{do.Sprincipal}}</td>
+                <td>{{do.Slocation}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
